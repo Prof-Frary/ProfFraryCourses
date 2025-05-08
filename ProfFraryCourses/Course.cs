@@ -30,6 +30,19 @@ namespace ProfFraryCourses
             CourseName = crsName;
             Credits = cred;
         }
+
+        public override string ToString()
+        {
+
+           /* return ("Department is " + DeptID +
+                " Course Number is " + CourseNum +
+                " Course Name is " + CourseName + 
+                " Number of Credits is " + Credits.ToString());
+           */
+             return (DeptID + " " + CourseNum + " " + CourseName + 
+                " " + Credits.ToString() + " Credits");
+
+        }
     }
    
 }

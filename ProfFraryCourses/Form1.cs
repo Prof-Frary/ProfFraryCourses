@@ -17,16 +17,22 @@ namespace ProfFraryCourses
             cboDept.Text = "ENG";
         }
 
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             // no error checking
-            Course c = new Course(  cboDept.Text,
+            Course c = new Course(cboDept.Text,
                 txtCrsNum.Text,
                 txtCrsName.Text,
                 (int)numUDCredits.Value);
             lstOut.Items.Add(c);
             lstOut.Items.Add(c.DeptID);
-              
+
+        }
+
+        private void lstOut_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
